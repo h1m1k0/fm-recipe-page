@@ -23,8 +23,8 @@
     --rose-50: hsl(330, 100%, 98%);
 
     --spacing-600: 3rem;
-    --spacing:500: 2.5rem;
-    --spacing:400: 2rem;
+    --spacing-500: 2.5rem;
+    --spacing-400: 2rem;
     --spacing-300: 1.5rem;
     --spacing-200: 1rem;
     --spacing-150: 0.75rem;
@@ -55,6 +55,17 @@ html {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border: 0;
+}
+
+body {
+    padding-block: var(--spacing-1600);
+    padding-inline: var(--spacing-600);
+    background-color: var(--stone-100);
+}
+
+ul {
+    list-style: none;
 }
 
 .font-regular {
@@ -70,7 +81,7 @@ html {
 }
 
 .text-base {
-    font-size: var(--text-ba);
+    font-size: var(--text-base);
     line-height: 150%;
     letter-spacing: 0;
 }
@@ -113,7 +124,113 @@ html {
     background-color: var(--rose-50);
 }
 
+.bg-stone-150 {
+    background-color: var(--stone-150);
+}
+
+.horizontal-divider {
+    width: 100%;
+    height: 1px;
+    line-height: 0;
+    letter-spacing: 0;
+}
+
 .title,
 .subtitle {
     font-family: 'YoungSerif', serif;
+}
+
+.recipe-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-100);
+}
+
+.bullet-list-item::before {
+    content: "•";
+    padding-inline-end: var(--spacing-200);
+    color: var(--rose-800);
+}
+
+.numbered-list-item::before {
+    font-weight: var(--font-bold);
+    content: attr(data-index) ".";
+    padding-inline-end: var(--spacing-200);
+    color: var(--rose-800);
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-400);
+    max-width: 46rem;
+    margin: auto;
+    padding-block: var(--spacing-500);
+    padding-inline: var(--spacing-500);
+    border-radius: var(--rounded-lg);
+    background-color: var(--white);
+}
+
+img.recipe-image {
+    width: 100%;
+    height: auto;
+    max-height: 18.75rem;
+    border-radius: var(--rounded-sm);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-400);
+}
+
+.overview {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+}
+
+.preparation-time {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+    padding-block: var(--spacing-300);
+    padding-inline: var(--spacing-300);
+    border-radius: var(--rounded-sm);
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+}
+
+.nutrients {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-150);
+}
+
+.nutrient {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-200);
+    padding-inline: var(--spacing-400);
+}
+
+.nutrient * {
+    flex: 1;
 }
