@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'YoungSerif';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+    font-weight: 400 700;
+    font-style: normal;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+
+    --spacing-600: 3rem;
+    --spacing:500: 2.5rem;
+    --spacing:400: 2rem;
+    --spacing-300: 1.5rem;
+    --spacing-200: 1rem;
+    --spacing-150: 0.75rem;
+    --spacing-100: 0.5rem;
+    --spacing-1600: 8rem;
+
+    --font-regular: 400;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+    --text-base: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.75rem;
+    --text-2xl: 2.5rem;
+
+    --rounded-sm: 0.75rem;
+    --rounded-lg: 1.5rem;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Outfit', Helvetica;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.font-regular {
+    font-weight: var(--font-regular);
+}
+
+.font-semibold {
+    font-weight: var(--font-semibold);
+}
+
+.font-bold {
+    font-weight: var(--font-bold);
+}
+
+.text-base {
+    font-size: var(--text-ba);
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.text-xl {
+    font-size: var(--text-xl);
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.text-2xl {
+    font-size: var(--text-2xl);
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.text-stone-900 {
+    color: var(--stone-900);
+}
+
+.text-stone-600 {
+    color: var(--stone-600);
+}
+
+.text-brown-800 {
+    color: var(--brown-800);
+}
+
+.text-rose-800 {
+    color: var(--rose-800);
+}
+
+.bg-rose-50 {
+    background-color: var(--rose-50);
+}
+
+.title,
+.subtitle {
+    font-family: 'YoungSerif', serif;
+}
