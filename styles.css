@@ -47,7 +47,7 @@
 
 html {
     box-sizing: border-box;
-    font-family: 'Outfit', Helvetica;
+    font-family: 'Outfit', Helvetica, Arial, sans-serif;
 }
 
 *,
