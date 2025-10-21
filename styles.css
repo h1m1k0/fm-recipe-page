@@ -39,6 +39,7 @@
     --text-lg: 1.25rem;
     --text-xl: 1.75rem;
     --text-2xl: 2.5rem;
+    --text-2xl-mobile: 2.25rem;
 
     --rounded-sm: 0.75rem;
     --rounded-lg: 1.5rem;
@@ -99,7 +100,7 @@ ul {
 }
 
 .text-2xl {
-    font-size: var(--text-2xl);
+    font-size: clamp(var(--text-2xl-mobile), 9vw, var(--text-2xl));
     line-height: 100%;
     letter-spacing: 0;
 }
@@ -165,8 +166,8 @@ ul {
     gap: var(--spacing-400);
     max-width: 46rem;
     margin: auto;
-    padding-block: var(--spacing-500);
-    padding-inline: var(--spacing-500);
+    padding-block: clamp(var(--spacing-400), 8vw, var(--spacing-500));
+    padding-inline: clamp(var(--spacing-400), 8vw, var(--spacing-500));
     border-radius: var(--rounded-lg);
     background-color: var(--white);
 }
