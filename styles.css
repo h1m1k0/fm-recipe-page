@@ -63,7 +63,6 @@ body {
     padding-block: var(--spacing-1600);
     padding-inline: var(--spacing-600);
     background-color: var(--stone-100);
-    transition: all 0.5s ease;
 }
 
 ul {
@@ -241,7 +240,7 @@ img.recipe-image {
     body {
         padding-inline: 0;
         padding-block: 0;
-        transition: all 0.5s ease;
+        transition: padding-block 0.5s ease, padding-inline 0.5s ease;
     }
 
     .recipe {
